@@ -31,7 +31,6 @@ export default function TextForm(props) {
   };
 
   const countWord = () => {
-
     let newText = text.replace(/\s+/g, " ").trim();
     // console.log(newText.length);
     if (newText.length === 0) return 0;
@@ -67,9 +66,6 @@ export default function TextForm(props) {
         </button>
         <button className="btn btn-primary mx-1" onClick={handleCopyClick}>
           Copy to clipboard
-        </button>
-        <button className="btn btn-primary mx-1" onClick={countWord}>
-          count
         </button>
         <button
           className="btn btn-primary mx-1"
